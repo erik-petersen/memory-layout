@@ -55,30 +55,22 @@ main {
 NAVIGATION
 *************************************************************/
 
-.main-nav {
-  margin: 0;
-}
-
-.main-nav li:nth-child(odd) {
+.main-nav li {
   margin: 3em auto;
   width: 18em;
   padding: .7em 2.5em;
   border: .3em solid #fff;
   text-align: center;
   font-size: 1em;
-  font-weight: 800;
+  font-weight: 600;
+}
+
+.main-nav li:nth-child(odd) {
   -webkit-transform: perspective(25em) rotateY(-25deg);
           transform: perspective(25em) rotateY(-25deg);
 }
 
 .main-nav li:nth-child(even) {
-  margin: 3em auto;
-  width: 18em;
-  padding: .7em 2.5em;
-  border: .3em solid #fff;
-  text-align: center;
-  font-size: 1em;
-  font-weight: 800;
   -webkit-transform: perspective(25em) rotateY(25deg);
           transform: perspective(25em) rotateY(25deg);
 }
@@ -87,4 +79,11 @@ NAVIGATION
   text-decoration: none;
   color: #fff;
   padding: .7em 2.5em;
+}
+
+.main-nav li:hover,
+.main-nav a:hover {
+  color: #444;
+  background: #fff;
+  opacity: .9;
 }
