@@ -1,6 +1,7 @@
 html {
   background-color: #3f9bb0;
   color: #fff;
+  font-family: verdana, sans-serif;
 }
 
 /*************************************************************
@@ -9,19 +10,15 @@ BODY
 
 .wrapper {
   width: 100%;
-  background: red;
 }
 
 /*************************************************************
 HEADER
 *************************************************************/
 
-header {
-  text-align: center;
-}
-
 h1 {
-  margin: 0 auto;
+  margin-top: .3em;
+  text-align: center;
   font-family: "orbitron", sans-serif;
   font-size: 7em;
   font-weight: 400;
@@ -31,8 +28,32 @@ h1 {
   font-size: 1.3em;
 }
 
+/*************************************************************
+MAIN
+*************************************************************/
+
+main {
+  margin-top: 4em;
+}
+
+.new-game {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4em;
+}
+
 
 
 /*************************************************************
 NAVIGATION
 *************************************************************/
+
+.main-nav li {
+  margin-top: 3em;
+  text-align: center;
+  font-size: 2em;
+}
+.main-nav a {
+  text-decoration: none;
+  color: #fff;
+}
