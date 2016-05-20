@@ -1,21 +1,34 @@
-html {
+/*************************************************************
+GLOBAL
+*************************************************************/
+
+.wrapper {
+  height: 100em;
+  color: #fff;
+  font-family: helvetica, sans-serif;
+  vertical-align: middle;
+}
+
+/*************************************************************
+**************************************************************
+**************************************************************
+MAIN PAGE
+**************************************************************
+**************************************************************
+**************************************************************/
+
+.index-page {
   width: 100%;
   height: 100%;
-  margin: auto;
   background-color: #3f9bb0;
-  font-family: helvetica, sans-serif;
 }
 
 /*************************************************************
 BODY
 *************************************************************/
 
-.wrapper {
-  width: 100%;
-  height: 100em;
+.index-wrapper {
   margin-top: 12.8em;
-  color: #fff;
-  vertical-align: middle;
 }
 
 /*************************************************************
@@ -28,6 +41,7 @@ h1 {
   font-family: "orbitron", sans-serif;
   font-size: 4em;
   font-weight: 400;
+  letter-spacing: .05em;
 }
 
 .fa-lightbulb-o {
@@ -49,30 +63,32 @@ main {
   font-weight: 500;
 }
 
-
-
 /*************************************************************
 NAVIGATION
 *************************************************************/
 
+.main-nav {
+  margin-top: 2.5em;
+}
+
 .main-nav li {
-  margin: 3em auto;
+  margin: 1.2em auto;
   width: 18em;
-  padding: .7em 2.5em;
-  border: .3em solid #fff;
+  padding: .9em .5em;
+  border: .24em solid #fff;
   text-align: center;
-  font-size: 1em;
-  font-weight: 600;
+  font-size: 1.05em;
+  font-weight: 400;
 }
 
 .main-nav li:nth-child(odd) {
-  -webkit-transform: perspective(25em) rotateY(-25deg);
-          transform: perspective(25em) rotateY(-25deg);
+  -webkit-transform: perspective(20em) rotateY(-25deg);
+          transform: perspective(20em) rotateY(-25deg);
 }
 
 .main-nav li:nth-child(even) {
-  -webkit-transform: perspective(25em) rotateY(25deg);
-          transform: perspective(25em) rotateY(25deg);
+  -webkit-transform: perspective(20em) rotateY(25deg);
+          transform: perspective(20em) rotateY(25deg);
 }
 
 .main-nav a {
@@ -86,4 +102,37 @@ NAVIGATION
   color: #444;
   background: #fff;
   opacity: .9;
+}
+
+/*************************************************************
+**************************************************************
+**************************************************************
+GAME PAGE
+**************************************************************
+**************************************************************
+**************************************************************/
+
+.game-page {
+  background-color: #3f51b5;
+}
+
+.game-wrapper {
+  margin-top: 2.7em;
+}
+
+/*************************************************************
+GAME HEADER
+*************************************************************/
+
+.game-clock {
+  text-align: right;
+}
+
+.hearts-and-clocks {
+  margin-top: 2.5em;
+}
+
+.game-header {
+  width: 95%;
+  margin: auto;
 }
