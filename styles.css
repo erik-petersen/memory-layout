@@ -160,8 +160,15 @@ GAME BOARD
   text-align: center;
 }
 
+.card-checkbox {
+  float: left;
+  width: 14em;
+  height: 14em;
+  display: none;
+}
+
 .card {
-  box-sizing: border-box;
+  position: relative;
   float: left;
   width: 14em;
   height: 14em;
@@ -169,21 +176,89 @@ GAME BOARD
   background: #7986cb;
   margin: 0 .07em;
   transition: background 1s, transform 1s;
-  /*z-index: 1;*/
-  -webkit-transform: rotateY(0deg);
-         -transform: rotateY(0deg);
+  /*z-index: 2;*/
+  /*-webkit-transform: rotateY(0deg);
+         -transform: rotateY(0deg);*/
 }
 
-.card-icon {
-  /*opacity: 0;*/
+
+
+
+
+
+
+
+
+
+
+
+.card-pane-trial {
   position: relative;
-  text-align: center;
-  margin-top: 3em;
-  /*z-index: 2;*/
-  /*visibility: hidden;*/
+  width: 14em;
+  height: 14em;
+  transition: background 1s, transform 1s;
+}
+
+.card-checkbox-trial {
+  width: 14em;
+  height: 14em;
+  display: none;
+}
+
+.card-trial {
+  backface-visibility: hidden;
+  transition: background 1s, transform 1s;
+  display: block;
+  position: absolute;
+  top: 58em;
+  left: 5em;
+}
+
+.card-icon-trial {
+  backface-visibility: hidden;
+  display: block;
+  position: absolute;
+  top: 40em;
+  left: 5em;
+}
+
+.card-trial {
+  width: 14em;
+  height: 14em;
+  border-radius: 5px;
+  background: #7986cb;
+  /*margin: 0 .07em;*/
+  /*transition: background 1s, transform 1s;*/
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.card-icon-trial {
+  transform: rotateY(180deg);
+}
+
+
+.card-checkbox-trial:checked +.card-trial {
+  transform: rotateY(180deg);
+}
+
+.card-checkbox:checked +.card-icon-trial {
+  opacity: 1;
   -webkit-transform: rotateY(180deg);
          -transform: rotateY(180deg);
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 .card-checkbox {
   width: 14em;
@@ -191,14 +266,22 @@ GAME BOARD
   display: none;
 }
 
-.card-checkbox:checked +.card-icon {
-  opacity: 1;
+.card-icon {
+  position: relative;
+  text-align: center;
+  margin-top: 3em;
+  opacity: 0;
   -webkit-transform: rotateY(180deg);
          -transform: rotateY(180deg);
 }
 
 .card-checkbox:checked +.card {
-  /*opacity: 1;*/
+  -webkit-transform: rotateY(180deg);
+         -transform: rotateY(180deg);
+}
+
+.card-checkbox:checked +.card-icon {
+  opacity: 1;
   -webkit-transform: rotateY(180deg);
          -transform: rotateY(180deg);
 }
