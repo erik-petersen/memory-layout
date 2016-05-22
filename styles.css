@@ -167,6 +167,12 @@ GAME BOARD
   display: none;
 }
 
+.card-checkbox {
+  width: 14em;
+  height: 14em;
+  background: #7986cb;
+}
+
 .card {
   position: relative;
   float: left;
@@ -175,35 +181,29 @@ GAME BOARD
   border-radius: 5px;
   background: #7986cb;
   margin: 0 .07em;
-  transition: background 1s, transform 1s;
-  /*z-index: 2;*/
-  /*-webkit-transform: rotateY(0deg);
-         -transform: rotateY(0deg);*/
+  -webkit-transition: background 1s, transform 1s;
+          transition: background 1s, transform 1s;
 }
 
-.card-checkbox {
-  width: 14em;
-  height: 14em;
-  display: none;
+.icon-container5 {
+  width: 100%;
+  height: 100%;
+  background: #7986cb;
 }
 
 .card-icon {
   position: relative;
-  background: #7986cb;
+  width: 100%;
+  height: 100%;
+  color: #7986cb;
   text-align: center;
   margin-top: 3em;
-  opacity: 1;
   -webkit-transform: rotateY(180deg);
          -transform: rotateY(180deg);
 }
 
 .card-checkbox:checked +.card {
-  -webkit-transform: rotateY(180deg);
-         -transform: rotateY(180deg);
-}
-
-.card-checkbox:checked +.card-icon {
-  opacity: 1;
+  background: #fff;
   -webkit-transform: rotateY(180deg);
          -transform: rotateY(180deg);
 }
