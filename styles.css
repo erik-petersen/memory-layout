@@ -1,3 +1,5 @@
+/* Week 1 End Project Memory Game (match two cards) - Erik Petersen Cohort 7 */
+
 /*************************************************************
 GLOBAL
 *************************************************************/
@@ -164,13 +166,8 @@ GAME BOARD
   float: left;
   width: 14em;
   height: 14em;
-  display: none;
-}
-
-.card-checkbox {
-  width: 14em;
-  height: 14em;
   background-color: #7986cb;
+  display: none;
 }
 
 .card {
@@ -200,12 +197,6 @@ GAME BOARD
 
 }
 
-/*.card-checkbox:checked +.card {
-  background-color: #fff;
-  -webkit-transform: rotateY(180deg);
-         -transform: rotateY(180deg);
-}*/
-
 .card-checkbox:checked +.card {
   background-color: #fff;
   -webkit-transform: rotateY(180deg);
@@ -224,41 +215,3 @@ GAME BOARD
   display: inline-block;
   margin-top: .0031em;
 }
-
-/*
-.card-pane {
-  display: block;
-}
-
-.card-pane input {
-  width: 14em;
-  height: 14em;
-  display: none;
-}
-
-.card-pane input:checked +.game-card-front {
-  -webkit-transform: rotateY(180deg);
-         -transform: rotateY(180deg);
-}
-
-.game-card-front,
-.game-card-back {
-  width: 14em;
-  height: 14em;
-  background: #7986cb;
-  display: block;
-}
-
-.game-card-front {
-  z-index: 2;
-  -webkit-transform: rotateY(0deg);
-         -transform: rotateY(0deg);
-}
-
-.game-card-back {
-  z-index: 1;
-  backface-visibility: hidden;
-  -webkit-transform: rotateY(180deg);
-         -transform: rotateY(180deg);
-}
-*/
